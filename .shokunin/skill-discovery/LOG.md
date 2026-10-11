@@ -41,3 +41,9 @@
 
 ## R4 independent review and L1 decision
 - Named non-author gate-and-skill-r4-review at 10e7b98 reran private install/frontmatter/fresh-process inventory exit0, verified path and scratch removal. L1 admits R4 operability improved/freshness unchanged. No separate daemon reload or live shared install; SHONEN end-to-end box stays unchecked. Top-level inference 402 is route-specific, not documented OpenAI-only model usage depletion.
+
+
+## Round 5 — 2026-10-11 (freshness axis)
+- Investigated documented CLI lifecycle (`prime-agent --help`, `help status/attach/doctor/shutdown`) and live receipts: `prime-agent status` => no background services; `prime-agent list` showed many existing sessions; `ps` showed shared daemon PID 3336 and workers. `shutdown` stops every agent/services and no documented private daemon/socket start path surfaced, so avoided any daemon/session/reload action.
+- Fallback is deliberately **not daemon reload**. `corpus/probes/fresh-process-inventory.sh` uses only private temporary `--cwd` inventory and scratch `.prime/agent/skills`; before/after separate `prime-agent prompt` processes saw absent then present new skill. Exit 0; process/scratch/hash receipts and bounds are in `.shokunin/reports/round-5/skill-discovery.md`. Scratch removed by trap. No model calls, shared install/settings/TUI edits, MANIFEST/global/source edits.
+- Freshness unchanged: new-process inventory discovery measured; existing process reload not. Operability unchanged; R4 private install pass preserved. SHONEN box 2 unchecked.
