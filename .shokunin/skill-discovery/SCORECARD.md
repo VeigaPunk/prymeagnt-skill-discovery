@@ -4,8 +4,8 @@ Owned axes: operability, freshness. Scores are not assigned without a measured c
 
 | axis | score | evidence / counting command | last change |
 |---|---|---|---|
-| operability | improved (L1 verdict requested) | Round 3 isolated fixture passes matching winners despite stale competitors; fails missing/drifted winners. See round-3 report. | round 3 |
-| freshness | improved (L1 verdict requested) | Round 2 adds reproducible hash/mtime + fresh-process inventory probe; run detected drift in 2 of 3 winning installed copies (shokunin/ufo); all 3 non-winning shared candidates drift; round 3 did not retest live installed state. | round 2 |
+| operability | improved (L1 verdict requested) | Round 4 `.shokunin/skill-discovery/corpus/probes/isolated-lifecycle.sh` passed: disposable install + frontmatter checks + fresh inventory resolved the scratch project target. Round 4 report gives limits. | round 4 |
+| freshness | unchanged (L1 verdict requested) | Round 4 did not inspect live installed state or reload a daemon session; previous measured probe remains round 2. | round 2 |
 
-planned: none.
+planned: none; reload remains unverified and SHONEN box 2 unchecked.
 retired: none.
