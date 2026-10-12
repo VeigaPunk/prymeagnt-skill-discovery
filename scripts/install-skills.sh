@@ -37,6 +37,7 @@ mkdir -p "$TARGET"
 installed=0
 for src in "$SOURCE"/*/; do
   [ -d "$src" ] || continue
+  [ -f "$src/SKILL.md" ] || continue
   name="$(basename "$src")"
   case "$name" in .*) continue ;; esac
   mkdir -p "$TARGET/$name"
