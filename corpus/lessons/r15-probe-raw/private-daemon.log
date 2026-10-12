@@ -1,0 +1,4 @@
+supervisor started pid 210139
+open file limit 524288
+[2026-10-12T12:48:38.578Z] session worker 13251cfac401 registered (epoch 1, pid 210249)
+[2026-10-12T12:48:38.596Z] session worker 13251cfac401 re-registered (epoch 2, pid 210249)
