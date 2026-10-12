@@ -17,3 +17,5 @@ history lives on the craft/* branches of this repo; the fleet ledger is
 .shokunin/MANIFEST.json there.
 
 Province: skill install, frontmatter, and fresh-session discovery (scripts/install-skills.sh + probes). Shonen; end-to-end box open — r14 documented the disposable-daemon attempt.
+
+Upstream: https://github.com/VeigaPunk/prymeagnt-skill-discovery (branch main carries this corpus; craft/* branches carry round history). Local execution references it with: git fetch skill-discovery main
