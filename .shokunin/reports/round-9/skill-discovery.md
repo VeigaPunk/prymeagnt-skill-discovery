@@ -23,3 +23,12 @@ The probe records the scout's baseline separately and asserts current positive/n
 - **Freshness: unchanged.** Installation alone does not demonstrate process discovery or reload. No live daemon or `/reload` check was run.
 
 No manifest/global state/push or shared installation was touched.
+
+
+## Append-only correction: actual baseline comparison
+
+This addendum supersedes the initial fixture description above: the original probe used the current installer for its supposed baseline run, and the first report text therefore incorrectly described a scout-derived count as if it were baseline-probe evidence. The earlier text is retained for audit history; do not rely on its baseline characterization.
+
+The probe has been corrected to accept an installer path (`.shokunin/skill-discovery/corpus/probes/r9-installer-skillmd.sh <path>`), execute that exact binary/script for both fixtures, and print computed exit codes, installed counts, and destination presence. Baseline was extracted with `git show 9ff68f594b66ec42f49c0d432037c31bf4405ded:scripts/install-skills.sh` to a temporary executable. Actual results: baseline mixed exit 0/count 2/fake destination yes; baseline only-fake exit 0/count 1/destination yes. Current mixed exit 0/count 1/fake destination no; current only-fake exit 1/count 0/destination no. All four invocations were isolated; temporary fixtures cleaned up.
+
+The correction confirms the bounded verdict: **operability narrowly improved** because non-skill directories are not copied or counted; **freshness unchanged**, since no live discovery/reload was performed.
