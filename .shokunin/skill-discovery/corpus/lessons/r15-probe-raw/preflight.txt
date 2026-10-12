@@ -1,0 +1,3 @@
+preflight: PATH_PREFLIGHT_PASS private_store=/tmp/probe-continuation/agent-home private_socket=/tmp/probe-continuation/daemon.sock live_store=/home/vgpnk/.prime/agent live_socket=/tmp/prime-agent-rust-1000/daemon.sock
+-rw------- 1 vgpnk vgpnk 2 Oct 12 09:48 /tmp/probe-continuation/agent-home/.prime/agent/auth.json
+{}
