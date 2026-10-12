@@ -27,3 +27,7 @@ Operability **improved narrowly**: direct source directory link now skipped befo
 ## R12 lane observation — 2026-10-12 (awaiting L1 verdict)
 
 Operability **improved narrowly** at destination-entry symlink guard: actual baseline/current mixed exit/count 0/2 → 1/1, linked-only 0/1 → 1/0, ordinary-only 0/1 → 0/1. Outside write yes → no, existing outside sentinel unchanged. Freshness **unchanged**: fresh CLI inventory only, no daemon/reload. See `.shokunin/reports/round-12/skill-discovery.md` and private R12 probe; R9/R10/R11 controls passed.
+
+## R13 lane observation — 2026-10-12 (awaiting L1 verdict)
+
+Operability **improved narrowly**: actual `b929d86` private direct/linked installer exit/count 0/3 and 1/0 → current 0/3 and 0/3; explicit private override 0/1 → 0/1. Fresh CLI inventory tied to the private target has all three ordinary skills in the current linked and direct cases (baseline linked had none); override has only the override skill. Freshness **unchanged**: no existing daemon/session reload. Counting command: `corpus/probes/r13-script-link.sh <absolute-installer-path>`, baseline extracted with `git show b929d86:scripts/install-skills.sh`; R9–R12 controls passed. Score not raised pending L1 decision; no daemon/shared/provider/atomicity or portability claim beyond GNU realpath.

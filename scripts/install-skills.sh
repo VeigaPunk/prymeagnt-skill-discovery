@@ -11,7 +11,7 @@
 #   SKILLS_SOURCE   source dir (default: <repo>/skills)
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(dirname "$(realpath -e -- "${BASH_SOURCE[0]}")")"
 SOURCE="${SKILLS_SOURCE:-$SCRIPT_DIR/../skills}"
 AGENT_DIR="${PRIME_AGENT_CODING_AGENT_DIR:-$HOME/.prime/agent}"
 TARGET="${1:-$AGENT_DIR/skills}"
