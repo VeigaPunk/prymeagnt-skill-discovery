@@ -31,3 +31,11 @@ Operability **improved narrowly** at destination-entry symlink guard: actual bas
 ## R13 lane observation — 2026-10-12 (awaiting L1 verdict)
 
 Operability **improved narrowly**: actual `b929d86` private direct/linked installer exit/count 0/3 and 1/0 → current 0/3 and 0/3; explicit private override 0/1 → 0/1. Fresh CLI inventory tied to the private target has all three ordinary skills in the current linked and direct cases (baseline linked had none); override has only the override skill. Freshness **unchanged**: no existing daemon/session reload. Counting command: `corpus/probes/r13-script-link.sh <absolute-installer-path>`, baseline extracted with `git show b929d86:scripts/install-skills.sh`; R9–R12 controls passed. Score not raised pending L1 decision; no daemon/shared/provider/atomicity or portability claim beyond GNU realpath.
+
+## R14 lane observation — 2026-10-12 (no-axis)
+
+Declared freshness test was private install → `/reload` → same-session discovery. Disposable daemon preflight passed and private installation/fresh CLI inventory passed, but no `/reload` event or same-session inventory was captured: private sessions contain setup events only. **Freshness unchanged; operability unchanged.** Private daemon PID/socket were gone after direct SIGTERM; live PID/socket remained. See `corpus/lessons/2026-10-12-r14-disposable-lifecycle.json` and `corpus/lessons/r14-raw/`. SHONEN box 2 remains unchecked.
+
+## L1 appendix — R10–R13 closure reconciliation (2026-10-12)
+
+Supersedes only the “awaiting L1 verdict” wording in the R11–R13 lane observations and the unsuffixed R10 proposal, without altering the original observations. `.shokunin/MANIFEST.json` already contains reviewed R10, R11 and R12 closures in this branch. The integration branch `craft/primeagent-shokunin-20261011` contains R13 closure `f7842da` naming non-author `skill-r13-independent-review`, replayed source commits `633fc59/2368bb7` corresponding to this lane's `6834829/1743da1`. L1 records R10, R11, R12 and R13 as **operability improved narrowly; freshness unchanged**, each limited to private installer/fresh-process evidence. R13 still requires this branch's append-only rounds[] closure entry. No existing daemon `/reload` receipt, no end-to-end SHONEN claim.

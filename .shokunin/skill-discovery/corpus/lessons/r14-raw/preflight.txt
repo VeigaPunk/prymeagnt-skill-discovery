@@ -1,0 +1,2 @@
+PATH_PREFLIGHT_PASS private_store=/tmp/skill-r14-cq_2t_om/agent-home private_socket=/tmp/skill-r14-cq_2t_om/daemon.sock live_store=/home/vgpnk/.prime/agent live_socket=/tmp/prime-agent-rust-1000/daemon.sock
+daemon_started=NO session_started=NO

@@ -1,0 +1,2 @@
+private pid 185782: absent; private socket: absent
+operator pid 3336: present; live socket: present

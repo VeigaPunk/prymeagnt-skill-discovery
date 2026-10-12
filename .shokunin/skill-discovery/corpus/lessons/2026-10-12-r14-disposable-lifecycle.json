@@ -1,0 +1,52 @@
+{
+  "round": 14,
+  "scratch": "/tmp/skill-r14-cq_2t_om",
+  "claim": "Existing isolated session /reload changes its discovered skill inventory after private installation; otherwise no axis advance.",
+  "preflight": {
+    "command": "env -i PATH=/home/vgpnk/.kimi-code/bin:/home/vgpnk/.local/share/mise/installs/node/latest/bin:/home/vgpnk/.local/share/mise/shims:/run/user/1000/fnm_multishells/2826_1791756229535/bin:/home/vgpnk/.local/share/fnm:/home/vgpnk/.local/share/omarchy/bin:/run/user/1000/fnm_multishells/2826_1791756229535/bin:/home/vgpnk/.local/share/fnm:/home/vgpnk/.opencode/bin:/home/vgpnk/.local/bin:/home/vgpnk/.local/share/omarchy/bin:/run/user/1000/fnm_multishells/1615_1791756174314/bin:/home/vgpnk/.local/share/fnm:/home/vgpnk/.opencode/bin:/home/vgpnk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/vgpnk/.local/bin:/home/vgpnk/.local/bin HOME=/tmp/skill-r14-cq_2t_om .shokunin/skill-discovery/corpus/probes/daemon-isolation-preflight.sh /tmp/skill-r14-cq_2t_om/agent-home /tmp/skill-r14-cq_2t_om/daemon.sock /home/vgpnk/.prime/agent /tmp/prime-agent-rust-1000/daemon.sock",
+    "exit": 0,
+    "output": "PATH_PREFLIGHT_PASS private_store=/tmp/skill-r14-cq_2t_om/agent-home private_socket=/tmp/skill-r14-cq_2t_om/daemon.sock live_store=/home/vgpnk/.prime/agent live_socket=/tmp/prime-agent-rust-1000/daemon.sock\ndaemon_started=NO session_started=NO"
+  },
+  "isolation": {
+    "daemon_pid": 185782,
+    "daemon_command": "prime-agent --mode daemon --daemon-socket /tmp/skill-r14-cq_2t_om/daemon.sock --cwd /tmp/skill-r14-cq_2t_om/project",
+    "private_store": "/tmp/skill-r14-cq_2t_om/agent-home",
+    "private_socket": "/tmp/skill-r14-cq_2t_om/daemon.sock",
+    "live_store": "/home/vgpnk/.prime/agent",
+    "live_socket": "/tmp/prime-agent-rust-1000/daemon.sock",
+    "inherited_internal_env_removed": "env -i",
+    "private_socket_present_during_run": true,
+    "private_pid_present_during_run": true,
+    "private_socket_present_after_TERM": false,
+    "private_pid_present_after_TERM": false,
+    "live_pid_3336_present_after": true,
+    "live_socket_present_after": true
+  },
+  "fixture": {
+    "source": "/tmp/skill-r14-cq_2t_om/fixture-source/r14-isolated/SKILL.md",
+    "target": "/tmp/skill-r14-cq_2t_om/project/.prime/agent/skills/r14-isolated/SKILL.md",
+    "name": "r14-isolated",
+    "description": "Isolated disposable lifecycle fixture for reload discovery.",
+    "installed_file_exists": true,
+    "installer_exit": 0,
+    "installer_stdout": "installed skill: r14-isolated -> /tmp/skill-r14-cq_2t_om/project/.prime/agent/skills/r14-isolated\ndone: 1 skill(s) installed into /tmp/skill-r14-cq_2t_om/project/.prime/agent/skills"
+  },
+  "fresh_prompt": {
+    "before_exit": 0,
+    "before_inventory_contains_fixture": false,
+    "before_sha256": "e6619d936914bb8a69fc1c904515ea8e5f2131dc513ada2aa2560602f4bea029",
+    "after_exit": 0,
+    "after_inventory_contains_fixture": true,
+    "after_location": "/tmp/skill-r14-cq_2t_om/project/.prime/agent/skills/r14-isolated/SKILL.md",
+    "after_sha256": "e7ed5f19b87dfa95dd7f1e4a6d8da889bcc65c46202d8cfb5f204f615cc136b6"
+  },
+  "interactive_attempt": {
+    "private_session_event_line_counts": [
+      5,
+      5
+    ],
+    "tty_capture": "non-reproducible screen control sequences; no /reload receipt, no same-session inventory receipt",
+    "reload_verified": false
+  },
+  "outcome": "no-axis-advance; operability unchanged, freshness unchanged; SHONEN box 2 unchecked"
+}

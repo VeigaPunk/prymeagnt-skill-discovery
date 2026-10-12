@@ -1,0 +1,2 @@
+installed skill: r14-isolated -> /tmp/skill-r14-cq_2t_om/project/.prime/agent/skills/r14-isolated
+done: 1 skill(s) installed into /tmp/skill-r14-cq_2t_om/project/.prime/agent/skills
