@@ -23,3 +23,7 @@ R9: **operability narrowly improved; freshness unchanged**. Actual baseline and 
 ## R11 lane observation — 2026-10-12 (awaiting L1 verdict)
 
 Operability **improved narrowly**: direct source directory link now skipped before target creation. Baseline/current mixed install 0/2 → 0/1 and only-link 0/1 → 1/0; fresh-process inventory excludes outside-skill and preserves ordinary. Freshness **unchanged**: fresh CLI processes only; no daemon/reload. See `.shokunin/reports/round-11/skill-discovery.md` and private R11 probe; R9/R10 controls passed.
+
+## R12 lane observation — 2026-10-12 (awaiting L1 verdict)
+
+Operability **improved narrowly** at destination-entry symlink guard: actual baseline/current mixed exit/count 0/2 → 1/1, linked-only 0/1 → 1/0, ordinary-only 0/1 → 0/1. Outside write yes → no, existing outside sentinel unchanged. Freshness **unchanged**: fresh CLI inventory only, no daemon/reload. See `.shokunin/reports/round-12/skill-discovery.md` and private R12 probe; R9/R10/R11 controls passed.

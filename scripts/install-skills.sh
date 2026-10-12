@@ -48,6 +48,7 @@ for src in "$SOURCE"/*/; do
   fi
   name="$(basename "$src")"
   case "$name" in .*) continue ;; esac
+  [ -L "$TARGET/$name" ] && fail "skill destination is a symlink: $TARGET/$name"
   mkdir -p "$TARGET/$name"
   cp -a "$src". "$TARGET/$name/"
   if [ -L "$src/SKILL.md" ]; then
